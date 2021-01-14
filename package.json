@@ -2,7 +2,12 @@
     "name": "codescope",
     "displayName": "CodeScope",
     "description": "Inject answers directly into any file from Stack Overflow with one simple CodeScope command...",
-    "version": "0.0.1",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alexhaislip/CodeScope_Visual_Studio_Extension"
+    },
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.52.0"
     },
@@ -12,7 +17,15 @@
     "contributes": {
         "snippets": [
             {
-                "language": "python",
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
                 "path": "./snippets/snippets.code-snippets"
             }
         ]
